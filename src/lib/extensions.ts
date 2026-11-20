@@ -1,4 +1,4 @@
-import type { ExtensionFinding, Rating } from "./types";
+import type { ExtensionFinding, Rating } from "./types.js";
 
 interface ParsedExtension {
   extension?: string;

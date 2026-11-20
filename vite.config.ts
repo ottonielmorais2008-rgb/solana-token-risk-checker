@@ -1,9 +1,9 @@
 import type { IncomingMessage, ServerResponse } from "node:http";
 import react from "@vitejs/plugin-react";
 import { defineConfig, type Plugin } from "vitest/config";
-import { handleExplainHttp } from "./src/lib/explain";
-import { handleInspectHttp } from "./src/lib/inspect-http";
-import type { HttpRequest, HttpResponse } from "./src/lib/http";
+import { handleExplainHttp } from "./src/lib/explain.js";
+import { handleInspectHttp } from "./src/lib/inspect-http.js";
+import type { HttpRequest, HttpResponse } from "./src/lib/http.js";
 
 async function readBody(req: IncomingMessage, max = 32_000): Promise<string> {
   const chunks: Buffer[] = [];

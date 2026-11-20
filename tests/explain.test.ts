@@ -6,11 +6,11 @@ import {
   MAX_REPORT_CHARS,
   prepareExplainPayload,
   SYSTEM,
-} from "../src/lib/explain";
-import { resetRateLimit } from "../src/lib/rate-limit";
-import { buildReport } from "../src/lib/scoring";
-import type { HttpResponse } from "../src/lib/http";
-import type { TokenFacts } from "../src/lib/types";
+} from "../src/lib/explain.js";
+import { resetRateLimit } from "../src/lib/rate-limit.js";
+import { buildReport } from "../src/lib/scoring.js";
+import type { HttpResponse } from "../src/lib/http.js";
+import type { TokenFacts } from "../src/lib/types.js";
 
 const facts: TokenFacts = {
   mint: "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",

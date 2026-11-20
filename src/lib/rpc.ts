@@ -1,7 +1,7 @@
 import { PublicKey } from "@solana/web3.js";
-import type { Cluster, ExtensionFinding, Holder, TokenFacts } from "./types";
-import { assessExtensions } from "./extensions";
-import { formatUiAmount, holderPercent } from "./format";
+import type { Cluster, ExtensionFinding, Holder, TokenFacts } from "./types.js";
+import { assessExtensions } from "./extensions.js";
+import { formatUiAmount, holderPercent } from "./format.js";
 
 export const TOKEN_PROGRAM = "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA";
 export const TOKEN_2022_PROGRAM = "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb";

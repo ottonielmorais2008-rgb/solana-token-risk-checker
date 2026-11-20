@@ -13,7 +13,7 @@
     "typecheck": "tsc --noEmit"
   },
   "engines": {
-    "node": ">=20.9"
+    "node": "22.x"
   },
   "dependencies": {
     "@solana/web3.js": "^1.98.4",

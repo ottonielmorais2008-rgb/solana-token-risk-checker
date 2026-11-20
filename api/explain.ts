@@ -1,5 +1,5 @@
 import type { VercelRequest, VercelResponse } from "@vercel/node";
-import { handleExplainHttp } from "../src/lib/explain";
+import { handleExplainHttp } from "../src/lib/explain.js";
 
 export const maxDuration = 30;
 

@@ -1,7 +1,7 @@
-import { clientIp, allow } from "./rate-limit";
-import { cors, methodOf, readJsonBody, tooLarge, type HttpRequest, type HttpResponse } from "./http";
-import { inspectMint, type InspectRequest } from "./inspect";
-import type { LoadMintDeps } from "./rpc";
+import { clientIp, allow } from "./rate-limit.js";
+import { cors, methodOf, readJsonBody, tooLarge, type HttpRequest, type HttpResponse } from "./http.js";
+import { inspectMint, type InspectRequest } from "./inspect.js";
+import type { LoadMintDeps } from "./rpc.js";
 
 export const INSPECT_LIMIT = 30;
 export const INSPECT_WINDOW_MS = 60_000;
