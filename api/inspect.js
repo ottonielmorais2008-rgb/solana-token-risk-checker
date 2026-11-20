@@ -98,9 +98,6 @@ function parseMintAddress(raw) {
   return { ok: true, mint };
 }
 
-// src/lib/rpc.ts
-import { PublicKey } from "@solana/web3.js";
-
 // src/lib/extensions.ts
 var INFORMATIONAL = /* @__PURE__ */ new Set([
   "metadataPointer",
@@ -410,7 +407,7 @@ function isParsedAccount(value) {
 async function loadMintFacts(mint, cluster, deps = {}) {
   const endpoints = ENDPOINTS[cluster];
   const options = { fetch: deps.fetch, sleep: deps.sleep, retries: deps.retries };
-  const pubkey = new PublicKey(mint).toBase58();
+  const pubkey = mint;
   const account = await rpcRequest(
     endpoints,
     "getAccountInfo",

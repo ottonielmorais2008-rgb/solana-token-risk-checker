@@ -1,4 +1,3 @@
-import { PublicKey } from "@solana/web3.js";
 import type { Cluster, ExtensionFinding, Holder, TokenFacts } from "./types.js";
 import { assessExtensions } from "./extensions.js";
 import { formatUiAmount, holderPercent } from "./format.js";
@@ -213,7 +212,7 @@ export interface LoadMintDeps {
 export async function loadMintFacts(mint: string, cluster: Cluster, deps: LoadMintDeps = {}): Promise<TokenFacts> {
   const endpoints = ENDPOINTS[cluster];
   const options = { fetch: deps.fetch, sleep: deps.sleep, retries: deps.retries };
-  const pubkey = new PublicKey(mint).toBase58();
+  const pubkey = mint;
 
   const account = await rpcRequest<AccountInfoResult>(
     endpoints,
