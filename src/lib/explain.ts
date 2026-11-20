@@ -1,7 +1,7 @@
-import { parseMintAddress } from "./address";
-import { clientIp, allow } from "./rate-limit";
-import { cors, methodOf, readJsonBody, tooLarge, type HttpRequest, type HttpResponse } from "./http";
-import type { RiskReport } from "./types";
+import { parseMintAddress } from "./address.js";
+import { clientIp, allow } from "./rate-limit.js";
+import { cors, methodOf, readJsonBody, tooLarge, type HttpRequest, type HttpResponse } from "./http.js";
+import type { RiskReport } from "./types.js";
 
 export type EnvMap = Record<string, string | undefined>;
 

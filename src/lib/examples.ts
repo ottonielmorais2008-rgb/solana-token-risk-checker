@@ -1,4 +1,4 @@
-import type { Cluster } from "./types";
+import type { Cluster } from "./types.js";
 
 export interface ExampleMint {
   symbol: string;

@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { formatUiAmount, holderPercent, ratingLabel, shortAddress } from "../src/lib/format";
+import { formatUiAmount, holderPercent, ratingLabel, shortAddress } from "../src/lib/format.js";
 
 describe("format helpers", () => {
   it("shortens long addresses and leaves short ones alone", () => {

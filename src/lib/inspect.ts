@@ -1,7 +1,7 @@
-import { parseMintAddress } from "./address";
-import { isCluster, loadMintFacts, type LoadMintDeps } from "./rpc";
-import { buildReport } from "./scoring";
-import type { Cluster, RiskReport } from "./types";
+import { parseMintAddress } from "./address.js";
+import { isCluster, loadMintFacts, type LoadMintDeps } from "./rpc.js";
+import { buildReport } from "./scoring.js";
+import type { Cluster, RiskReport } from "./types.js";
 
 export interface InspectRequest {
   mint?: unknown;

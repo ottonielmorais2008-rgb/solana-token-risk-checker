@@ -9,8 +9,8 @@ import {
   TOP10_RISK_PERCENT,
   TOP1_RISK_PERCENT,
   TOP1_WARN_PERCENT,
-} from "../src/lib/scoring";
-import type { Holder, TokenFacts } from "../src/lib/types";
+} from "../src/lib/scoring.js";
+import type { Holder, TokenFacts } from "../src/lib/types.js";
 
 const mint = "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v";
 

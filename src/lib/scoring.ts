@@ -1,6 +1,6 @@
-import { extensionsRating } from "./extensions";
-import type { CheckResult, Rating, RiskReport, TokenFacts } from "./types";
-import { RATING_RANK } from "./types";
+import { extensionsRating } from "./extensions.js";
+import type { CheckResult, Rating, RiskReport, TokenFacts } from "./types.js";
+import { RATING_RANK } from "./types.js";
 
 /** Top-holder share at or above this percentage is Risk. */
 export const TOP1_RISK_PERCENT = 50;

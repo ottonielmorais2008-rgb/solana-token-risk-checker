@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { base58Decode, isSolanaAddress, parseMintAddress } from "../src/lib/address";
+import { base58Decode, isSolanaAddress, parseMintAddress } from "../src/lib/address.js";
 
 const USDC = "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v";
 const BONK = "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263";

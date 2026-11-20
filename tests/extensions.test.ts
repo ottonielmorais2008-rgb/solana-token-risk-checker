@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
-import { assessExtension, assessExtensions, extensionsRating } from "../src/lib/extensions";
-import { scoreExtensions, scoreTokenProgram } from "../src/lib/scoring";
-import type { TokenFacts } from "../src/lib/types";
+import { assessExtension, assessExtensions, extensionsRating } from "../src/lib/extensions.js";
+import { scoreExtensions, scoreTokenProgram } from "../src/lib/scoring.js";
+import type { TokenFacts } from "../src/lib/types.js";
 
 const base: TokenFacts = {
   mint: "2b1kV6DkPAnxd5ixfnxCpjxmKwqjjaYmCZfHsFu24GXo",

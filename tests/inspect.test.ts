@@ -1,9 +1,9 @@
 import { afterEach, describe, expect, it } from "vitest";
-import { handleInspectHttp } from "../src/lib/inspect-http";
-import { inspectMint } from "../src/lib/inspect";
-import { resetRateLimit } from "../src/lib/rate-limit";
-import { ENDPOINTS, TOKEN_2022_PROGRAM, TOKEN_PROGRAM } from "../src/lib/rpc";
-import type { HttpResponse } from "../src/lib/http";
+import { handleInspectHttp } from "../src/lib/inspect-http.js";
+import { inspectMint } from "../src/lib/inspect.js";
+import { resetRateLimit } from "../src/lib/rate-limit.js";
+import { ENDPOINTS, TOKEN_2022_PROGRAM, TOKEN_PROGRAM } from "../src/lib/rpc.js";
+import type { HttpResponse } from "../src/lib/http.js";
 
 const USDC = "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v";
 
